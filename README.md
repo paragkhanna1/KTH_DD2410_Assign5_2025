@@ -294,10 +294,20 @@ Change the params file in the launch file: "goal_params_BT_level_A.yaml"
 
 ### 🧪 Evaluation Scenarios
 
+*Ideally, the robot should start in a different position than the default, in the evaluation, the TA might ask you to move the robot to a different position by using the translation in Gazebo. You can also do this once you are confident about your implementation.
+The grumpy TA would try all methods to try and fail your code AGAIN! 
+The BT should handle deactivation, new goal while current goal is being processed etc.
+
+(If your code handles all above, this might make the TA grumpier, leading to a last try to fail you):
+The TA kidnaps your robot! (move it in Gazebo). Do you think your method would still work? 
+Do you think you really need localization or re-localization? How to achieve this?
+
+(Hint: If you need a robot with RGB camera, export waffle instead of burger.)
+
 Grumpy TA may:
 
 * 🔁 **Deactivate robot** during mission
-* 🎯 **Send new goal** while robot is en route
+* 🎯 **Send new goal** while robot is en route to current goal.
 * 🕵️‍♂️ **Kidnap robot** (teleport it in Gazebo)
 
 > Your code must handle these cases **robustly** using BT and localization.
@@ -313,7 +323,7 @@ Grumpy TA may:
   ```
 
   to test activation/deactivation dynamically.
-* Switch to `waffle` robot model for RGB camera:
+* Switch to `waffle` robot model for RGB camera and other sensors if needed:
 
   ```bash
   export TURTLEBOT3_MODEL=waffle
@@ -334,7 +344,7 @@ Grumpy TA may:
 
   * Is it **stuck in a wall**?
   * Is it **activated**?
-  * Is `/robot_active` set to `True`?
+  * Is a `robot state topic` set to `True`?
 
 ---
 
@@ -365,6 +375,3 @@ ros2 service call <service_name> <service_type>
 * Use `rqt_graph` or `rqt` tools to visualize your system.
 * Follow best practices for node creation and parameter loading.
 
-
-
-Let me know if you want me to generate a visual Behavior Tree or help with `SM_students.py` or BT XML files.
