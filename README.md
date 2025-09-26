@@ -352,8 +352,10 @@ Level A complete!
 
 Congrats! Master Yo-ROS-da
 “Mastered the ROS force, you have. But beware... tempted by the Dark Side of shortcuts, you must not be. That way leads to debugging, segfaults... and late-night despair.” 
-😈 “But maybe... you are already on the Dark Side.”
+
+“But maybe... you are already on the Dark Side.”
 — Darth ROS-lord, Wielder of the Segfaults
+
 ---
 
 ## ✅ Summary of Completion Levels
