@@ -113,7 +113,8 @@ Edit your own `SM_students.py`:	Implement your state machine logic in SM_student
 
 
 * This script must:
-  0. (0.	Oh! I did not include these files correctly in the package, You need to include these files correctly like any new python script in a ros2 package, following all necessary steps.)
+  
+  0. (Oh! I did not include these files correctly in the package, You need to include these files correctly like any new python script in a ros2 package, following all necessary steps.)
 
   1. **Activate** the robot
    
@@ -214,7 +215,6 @@ Integrate robot sensors (e.g., Odometry, laser scan) into your logic to command 
       •	Avoid obstacles
       •	Make decisions dynamically—no hardcoded movements.
 
-
 ---
 
 ### 🧪 Test Cases
@@ -292,6 +292,7 @@ Change the params file in the launch file: "goal_params_BT_level_A.yaml"
 
 ---
 
+
 ### 🧪 Evaluation Scenarios
 
 *Ideally, the robot should start in a different position than the default, in the evaluation, the TA might ask you to move the robot to a different position by using the translation in Gazebo. You can also do this once you are confident about your implementation.
@@ -346,6 +347,13 @@ Grumpy TA may:
   * Is it **activated**?
   * Is a `robot state topic` set to `True`?
 
+---
+Level A complete!
+
+Congrats! Master Yo-ROS-da
+“Mastered the ROS force, you have. But beware... tempted by the Dark Side of shortcuts, you must not be. That way leads to debugging, segfaults... and late-night despair.” 
+😈 “But maybe... you are already on the Dark Side.”
+— Darth ROS-lord, Wielder of the Segfaults
 ---
 
 ## ✅ Summary of Completion Levels
